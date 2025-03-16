@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Grind - Your Local Coffee Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>The Daily Grind</h1>
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Catering</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Reservations</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Start Your Day with the Perfect Brew</h1>
+                <p>Your neighborhood coffee shop serving the finest coffee and pastries.</p>
+                <a href="#" class="button">View Menu</a>
+            </div>
+            <div class="hero-image">
+                <img src="Aesthetic coffee.jpg" alt="Delicious Coffee">
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-image">
+                <img src="Coffee beans aesthetic.jpg" alt="Coffee Beans">
+            </div>
+            <div class="about-content">
+                <h2>About The Daily Grind</h2>
+                <p>Welcome to The Daily Grind, your cozy corner for exceptional coffee and delightful treats. We are passionate about sourcing the best beans and crafting the perfect cup for you.  Our friendly baristas are dedicated to providing a warm and welcoming atmosphere where you can relax, connect, and enjoy your daily dose of caffeine.</p>
+                <p>We also offer a selection of fresh pastries, sandwiches, and light bites to complement your coffee. Whether you're stopping by for a quick morning pick-me-up or settling in for an afternoon of work or conversation, The Daily Grind is your ideal spot.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="Aesthetic coffee.jpg" alt="Coffee">
+                    <h3>Coffee</h3>
+                    <p>Espresso, Latte, Cappuccino, Americano, and more...</p>
+                </div>
+                <div class="menu-item">
+                    <img src="Pastries.jpg" alt="Pastries">
+                    <h3>Pastries</h3>
+                    <p>Croissants, Muffins, Scones, Cookies, and more...</p>
+                </div>
+                <div class="menu-item">
+                    <img src="Coffee beans aesthetic.jpg" alt="Beans">
+                    <h3>Beans</h3>
+                    <p>Freshly roasted beans available for purchase.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-button">What are your opening hours?</button>
+                    <div class="accordion-content">
+                        <p>We are open from 7:00 AM to 6:00 PM, Monday to Friday, and 8:00 AM to 4:00 PM on weekends.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-button">Do you offer catering services?</button>
+                    <div class="accordion-content">
+                        <p>Yes, we do! Please visit our Services page or contact us directly to discuss your catering needs.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-button">Where are you located?</button>
+                    <div class="accordion-content">
+                        <p>We are located in Kilimani,Nairobi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <div class="error-message" id="nameError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <div class="error-message" id="emailError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <div class="error-message" id="messageError"></div>
+                    </div>
+                    <button type="submit" class="button">Send Message</button>
+                    <div id="formSuccess" class="success-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="image-slider" id="slider">
+        <div class="container">
+            <h2>Our Coffee Moments</h2>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide fade">
+                        <img src="Coffee Moment 1.jpg" alt="Coffee Moment 1">
+                    </div>
+                    <div class="slide fade">
+                        <img src="Coffee Moment 2.jpg" alt="Coffee Moment 2">
+                    </div>
+                    <div class="slide fade">
+                        <img src="Coffee Moment 3.jpg" alt="Coffee Moment 3">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                </div>
+                <div class="slider-dots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 The Daily Grind. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="#" target="_blank">Facebook</a>
+                <a href="#" target="_blank">Instagram</a>
+                <a href="#" target="_blank">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
