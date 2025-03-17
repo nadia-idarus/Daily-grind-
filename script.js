@@ -55,13 +55,12 @@ const emailError = document.getElementById('emailError');
 const messageError = document.getElementById('messageError');
 const formSuccess = document.getElementById('formSuccess');
 
-if (contactForm) { // Check if the element exists
+if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
-        e.preventDefault(); // Prevent default form submission
+        e.preventDefault();
 
         let isValid = true;
 
-        // Name validation
         if (nameInput.value.trim() === '') {
             nameError.textContent = 'Name is required';
             isValid = false;
@@ -69,7 +68,6 @@ if (contactForm) { // Check if the element exists
             nameError.textContent = '';
         }
 
-        // Email validation
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(emailInput.value)) {
             emailError.textContent = 'Invalid email format';
@@ -78,7 +76,6 @@ if (contactForm) { // Check if the element exists
             emailError.textContent = '';
         }
 
-        // Message validation
         if (messageInput.value.trim() === '') {
             messageError.textContent = 'Message is required';
             isValid = false;
@@ -87,12 +84,11 @@ if (contactForm) { // Check if the element exists
         }
 
         if (isValid) {
-            // Simulate form submission success (replace with actual submission logic if needed)
             formSuccess.textContent = 'Message sent successfully!';
-            contactForm.reset(); // Clear the form
+            contactForm.reset();
             setTimeout(() => {
-                formSuccess.textContent = ''; // Clear success message after a delay
-            }, 3000); // Clear after 3 seconds
+                formSuccess.textContent = '';
+            }, 3000);
         }
     });
 }
